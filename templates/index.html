@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Internprime</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+  <header>
+    <link rel="stylesheet" href="style.css">
+    <div class="logo">
+      <img src="/static/images/white logo.jpg" alt="Internprime Logo" />
+    <a href="login.html"></a> 
+    </div>
+   <nav>
+  <a href="#about">About</a>
+  <a href="#programs">Internships</a>
+  <a href="/login">Login/Register</a>
+  <a href="#contact-highlights">Contact</a>
+</nav>
+  </header>
+  <div class="sli">
+  <p>Welcome to Internprime.👨‍🎓 Internship for Students & Fresh Graduates
+🕒 Flexible Timings
+📚 Beginner Friendly Training
+🧾 Internship Certificate Provided
+🌟 Upgrade Your Skills Today
+</p>
+</div>
+
+    <div class="hero">
+  <h2>Empowering Your Career With Real-World Internships</h2>
+  <p>Gain practical experience, build confidence, and develop professional skills.</p>
+    </div>
+  <div class="slider">
+  <img src="/static/images/pp1.jpg" class="slide">
+  <img src="/static/images/p2.jpg" class="slide">
+  <img src="/static/images/p3.jpg" class="slide">
+  <img src="/static/images/p4.jpg" class="slide">
+  <img src="/static/images/p5.jpg" class="slide">
+</div>
+<div class="heading-highlight">
+<h3>Our Internship Programs</h3>
+<span></span>
+</div>
+  <section id="programs">
+    <div class="programs">
+      <div class="card">
+        <h4>WEB DEVELOPMENT</h4>
+         <img src="/static/images/web.jpg" alt="Course Image" class="card-img"><br>
+        <p>Learn full-stack development with hands-on real projects.</p>
+      </div>
+      <div class="card">
+        
+        <h4>PYTHON PROGRAMMING</h4>
+        <img src="/static/images/python.jpg" alt="Course Image" class="card-img"><br>
+        <p>Master Python with practical applications and tasks.</p>
+      </div>
+      <div class="card">
+        <h4>DATA SCIENCE</h4>
+        <img src="/static/images/ds.jpg" alt="Course Image" class="card-img"><br>
+        <p>Learn data cleaning, analysis, ML basics, and real-time projects.</p>
+      </div>
+      <div class="card">
+        <h4>JAVA DEVELOPMENT</h4>
+         <img src="/static/images/java.jpg" alt="Course Image" class="card-img"><br>
+        <p>Understand core Java, OOP concepts, and build mini applications.</p>
+      </div>
+      <div class="card">
+        <h4>SQL & DATABASE</h4>
+         <img src="/static/images/sql.jpg" alt="Course Image" class="card-img"><br>
+        <p>Learn queries, joins, data handling, and database management.</p>
+      </div>
+    </div>
+  </section>
+  
+   <div class="center">
+ <center> <a href="/login" class="ap">Apply</a></center>
+</div>
+
+
+   <section id="about">
+    <div class="heading-highlight">
+    <h3>About Us</h3>
+    <span></span>
+</div>
+    <p>Internprime is a professional internship platform dedicated to guiding students and freshers into industry-ready individuals. We provide practical learning, expert guidance, and real-time project exposure. Our mission is to bridge the gap between academic knowledge and professional industry skills.</p>
+  </section>
+
+<div class="heading-highlight">
+<h3>Contact Us</h3>
+<span></span>
+</div>
+<section id="contact-highlights">
+  
+   <div class="contact-box">
+    <h3>📞 Executive Contact</h3>
+    <p>
+      +91 8807554800<br>
+      Mon – Fri (9 AM – 6 PM)
+    </p>
+  </div>
+
+  <div class="contact-box">
+    <h3>✉️ Official Email</h3>
+    <p>
+      connect.internprime@gmail.com
+    </p>
+  </div>
+
+  </section>
+
+  <script>
+let index = 0;
+const slides = document.getElementsByClassName("slide");
+
+function showSlides() {
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  index++;
+  if (index > slides.length) {
+    index = 1;
+  }
+
+  slides[index - 1].style.display = "block";
+
+  setTimeout(showSlides, 2500); // 2.5 seconds
+}
+
+showSlides();
+</script>
+
+
+  <footer>
+    © 2025 Internprime. All Rights Reserved.
+  </footer>
+
+</body>
+</html>

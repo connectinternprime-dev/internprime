@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apply Form</title>
+
+<link rel="stylesheet" href="/static/css/style2.css">
+
+</head>
+
+<body>
+
+<div class="form-box">
+<form method="POST" action="{{ url_for('apply') }}">
+    <input type="text" name="fullname" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+
+    <select name="course" required>
+        <option value="">Select Course</option>
+        <option>Python</option>
+        <option>Java</option>
+        <option>Web Development</option>
+    </select>
+
+    <textarea name="message" placeholder="Your Message" rows="4"></textarea>
+
+    <button type="submit">Apply Now</button>
+</form>
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+{% for category, msg in messages %}
+<p class="{{ category }}">{{ msg }}</p>
+{% endfor %}
+{% endwith %}
+
+
+  
+
+</div>
+
+</body>
+</html>

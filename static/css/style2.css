@@ -1,0 +1,36 @@
+ body {
+  font-family: Arial, sans-serif;
+  background-image: url('/static/images/bg1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: #5a5959; /* in case image fails */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ }
+
+  .form-box {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  input, select, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  button {
+    width: 100%;
+    background: #4CAF50;
+    padding: 12px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+  }
+ 
